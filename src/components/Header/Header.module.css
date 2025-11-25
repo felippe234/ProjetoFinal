@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(90deg, rgba(11,15,26,0.6), rgba(11,15,26,0.4));
+  z-index: 50;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.6px;
+  color: white;
+}
+
+.logoAccent {
+  color: var(--primary-1);
+  margin-left: 6px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.navBtn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s;
+}
+
+.navBtn:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.03);
+}
